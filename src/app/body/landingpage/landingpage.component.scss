@@ -1,0 +1,401 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+/****** Style Star Rating Widget *****/
+
+.rating { 
+    border: none;
+    float: left;
+  }
+  
+  .rating > input { display: none; } 
+  .rating > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+  
+  .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+  
+  .rating > label { 
+    color: rgb(199, 197, 197); 
+   float: right; 
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+  
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+  //css for landingpage
+.backgnd_grey{
+    background-color: rgb(239,240,241);
+    max-height: 1080px;
+    max-width: 1920px;
+    .map_overlay{
+        background-image: url('../../../assets/img/world-map-146505-960-720@3x.png');
+        width: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        .map_contents{
+            padding-top: 300px;
+            padding-bottom: 250px;
+            .row{
+                .col-md-5{
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction:column; 
+                    .left_side{
+                        object-fit: contain;
+                        font-family: Roboto;
+                        font-size: 44.5px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.16;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #404041;
+                        .lorem{
+                            font-size: 67.5px;
+                            font-weight: 900;
+                            color: #8cc342;
+                        }
+                        .ipsum{
+                            font-size: 67.5px;
+                            font-weight: 900;
+                        }
+                        p{
+                            margin-top: 20px;
+                            object-fit: contain;
+                            font-family: Roboto;
+                            font-size: 16px;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.81;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #404041;
+                        }
+                        .get_info{
+                            width: fit-content;
+                            background-color: rgb(92,141,24);
+                            padding: 11px 14px 12px 18px;
+                            object-fit: contain;
+                            font-family: Roboto;
+                            font-size: 24px;
+                            font-weight: 900;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 0.77;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #ffffff;
+                            img{
+                                padding-left: 3px;
+                            }
+                        }
+                    }
+                }
+                .col-md-7{
+                    .right_side{
+                        max-width: 600px;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+.our_products{
+    background-color: #ffffff;
+    max-width: 1920px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 100px;
+    .prod_overlay{
+        padding-top: 98px;
+        margin: 0 auto;
+    }
+    .pill_margin{
+        margin-top: 70px;
+    }
+    .container{
+        .nav-pills{
+            .nav-item{
+                .nav-link{
+                    padding: 5px 40px 5px 40px;
+                    color: #6e6e6e;
+                    object-fit: contain;
+                    font-family: Roboto;
+                    font-size: 22px;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                }
+                .active{
+                    background-color: #7db532;
+                    border-radius: 0px;
+                    color: #ffffff;
+                }
+            }
+        }
+        .tab-content{
+            margin-top: 50px;
+            .tab-pane{
+                .row{
+                    .col{
+                        padding: 5px;
+                        .prod_img{
+                            width: 100%;
+                            height: 306px;
+                            position: relative;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .prod_hover{
+                            position: absolute;
+                            text-align: left;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: rgba(0, 0,0 , .8);
+                            opacity: 0;
+                            transition-timing-function: ease-out;
+                            transition: 1s;
+                            &:hover{
+                                opacity: 1;
+                                transition-timing-function: ease-out;
+                                transition: 1s;
+                            }
+                            .prod_hover_overlay{
+                                margin-top: 30px;
+                                margin-left: 35px;
+                                margin-right: 30px;
+                                margin-bottom: 30px;
+                                img{
+                                    width: auto;
+                                    height: 50px;
+                                }
+                                h6{
+                                    margin-top: 20px;
+                                    object-fit: contain;
+                                    font-family: Roboto;
+                                    font-size: 18px;
+                                    font-weight: 300;
+                                    font-style: normal;
+                                    font-stretch: normal;
+                                    line-height: 1.28;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #6b6b6b;
+                                }
+                                p{
+                                    margin-top: 10px;
+                                    object-fit: contain;
+                                    font-family: Roboto;
+                                    font-size: 15px;
+                                    font-weight: 300;
+                                    font-style: normal;
+                                    font-stretch: normal;
+                                    line-height: 1.53;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #ffffff;
+                                    img{
+                                        height: auto !important;
+                                        width: 23px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+h2{
+    display: inline;
+    object-fit: contain;
+    font-family: Roboto;
+    font-size: 44.5px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    text-align: left;
+    color: #404041;
+    .prod_color{
+        color: #67912c;
+        display: inline;
+    }
+}
+hr{
+    border: 5px solid rgb(125,181,50);
+    width: 57px;
+    background-color: rgb(125,181,50);
+}
+.white_head{
+    color: #ffffff;
+}
+.why_codein_overlay{
+    padding-bottom: 70px;
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
+    text-align: center;
+    .code_overlay{
+        padding-top: 99px;
+        margin: 0 auto;
+    }
+    .icon_container{
+        .border_bottom{
+            border-bottom: 1px solid;
+        }
+        .margin_top{
+            margin-top: 53px;
+        }
+        .row{
+            .padd_top{
+                padding-top: 50px;
+            }
+            .padd_bottom{
+                padding-bottom: 50px;
+            }
+            .border_none{
+                border-right: none !important; 
+            }
+            .col{
+                border-right: 1px solid;
+                .image_icon{
+                    width: 74px;
+                    height: 84px;
+                    margin: 0 auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                h4{
+                    object-fit: contain;
+                    font-family: 'Roboto';
+                    font-size: 29px;
+                    font-weight: normal;
+                    margin-top: 27px;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.45;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+.rating_review{
+    background-color: #ffffff;
+    text-align: center;
+    .rating_overlay{
+        padding-top: 73px;
+        h2{
+            color: #3c3c3b !important;
+        }
+    }
+    .rating_review_box{
+        max-width: 980px;
+        margin: 0 auto;
+        margin-bottom: 75px;
+        padding-top: 36px;
+        .rating_review_box_one{
+            margin: 23px 16px 24px 16px;
+            .row{
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+                .rating_head{
+                    background-color: rgb(225, 225, 225);
+                    width: 100%;
+                    text-align: left;
+                    .rating_star{
+                        margin: 0px 23px 0px 20px;
+                        display: inline-block;
+                        label{
+                            margin-bottom: 0px;
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .for-design-quality{
+                        display: inline-block;
+                        padding: 5px 0px 0px 0px;
+                        vertical-align: top;
+                        object-fit: contain;
+                        font-family: Roboto;
+                        font-size: 21px;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #696969;
+                        .for_textstyle{
+                            font-weight: normal;
+                            display: inline;
+                        }
+                    }
+                    .kochi_taxi{
+                        padding: 5px 33px 0px 0px;
+                        vertical-align: top;
+                        float: right;
+                        object-fit: contain;
+                        font-family: Roboto;
+                        font-size: 21px;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #656565;
+                    }
+                }
+            }
+            .rating_body{
+                border: 2px solid rgb(225, 225, 225);
+                .rating_content{
+                    object-fit: contain;
+                    font-family: Roboto;
+                    font-size: 21px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 0.83;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #656565;
+                    margin: 48px 0px 40px 30px;
+                }
+            }
+        }
+    }
+}

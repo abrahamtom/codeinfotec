@@ -1,0 +1,269 @@
+.about{
+    padding-top: 150px;
+    .map_overlay{
+        margin: 0 auto;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        max-width: 1319px;
+        background-image: url("../../../assets//img/map_about.png");
+        padding-bottom: 85px;
+        h2{
+            padding-top: 72px;
+            object-fit: contain;
+            font-family: Roboto;
+            font-size: 48px;
+            font-weight: 900;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.04;
+            letter-spacing: normal;
+            text-align: center;
+            color: #171717;
+            }
+            .h2_style{
+                color: #67af05;
+                display: inline;
+            }
+            hr{
+                border: 5px solid rgb(125,181,50);
+                width: 57px;
+                background-color: rgb(125,181,50);
+            }
+            h5{
+                margin-top: 30px;
+                object-fit: contain;
+                font-family: Roboto;
+                font-size: 22px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 2.59;
+                letter-spacing: normal;
+                text-align: center;
+                color: #464646;
+            }
+            p{
+                max-width: 1116px;
+                object-fit: contain;
+                font-family: Roboto;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.8;
+                margin: 0 auto;
+                letter-spacing: normal;
+                text-align: center;
+                color: #464646;
+                margin-bottom: 0px;
+            }
+    }
+    .our_process{
+        background-image: url("../../../assets/img/163370-estender-500-5-desafios-no-desenvolvimento-mobile@3x.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        text-align: center;
+        .our_process_bg{
+            background-color: rgba(244, 244, 244,.6);
+            padding-bottom: 40px; 
+            h3{
+                object-fit: contain;
+                font-family: Roboto;
+                font-size: 40px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.68;
+                letter-spacing: normal;
+                text-align: center;
+                color: #171717;
+                padding-top: 50px;
+            }
+            hr{
+                border: 3px solid rgb(125,181,50);
+                width: 47px;
+                background-color: rgb(125,181,50);
+            }
+            .container{
+                .row{
+                    .col{
+                        padding-top: 50px;
+                        text-align: left;
+                        .our_process_img{
+                            margin-right: 40px;
+                            width: auto;
+                            height: 80px;
+                            vertical-align: top;
+                            float: left;
+                            img{
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                        .our_process_contents{
+                            float: left;
+                            width: calc(100% - 125px);
+                            position: relative;
+                            height: 100%;
+                            .process_line{
+                                position: absolute;
+                                border-left: 2px solid #000000;  
+                                height: inherit;                    
+                                top: 50px;
+                                left:-80px;
+                                z-index: -1;
+                            }
+                            h4{ 
+                                text-align: left !important;
+                                object-fit: contain;
+                                font-family: Roboto;
+                                font-size: 22px;
+                                font-weight: 500;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.23;
+                                letter-spacing: normal;
+                                text-align: center;
+                            }
+                            .discover_color{
+                                color: #d20710;
+                            }
+                            .concept_color{
+                                color: #059cce;
+                            }
+                            .design_color{
+                                color: #ea890b;
+                            }
+                            .build_color{
+                                color: #1ab121;
+                            }
+                            p{
+                                object-fit: contain;
+                                font-family: Roboto;
+                                font-size: 18px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.5;
+                                letter-spacing: normal;
+                                text-align: justify;
+                                color: #464646;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .anim_background{
+        background:url("../../../assets/img/asset_background.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        .anim_background_overlay{
+            background-color: rgb(23, 29, 33);
+            filter: opacity(.9);
+            .container{
+                .row{
+                    padding-top: 80px;
+                    padding-bottom: 80px;
+                    .col-md-3{
+                        border-right: 1px solid ;
+                        border-color: #777676;
+                        h3{
+                            text-align: center !important;
+                            object-fit: contain;
+                            font-family: Roboto;
+                            font-size: 64px;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 0.74;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #ffffff;
+                        }
+                        h5{
+                            text-align: center !important;
+                            object-fit: contain;
+                            font-family: Myriad Pro;
+                            font-size: 27.5px;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.73;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .our_values{
+        text-align: center;
+        h3{
+            object-fit: contain;
+            font-family: Roboto;
+            font-size: 40px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 0.68;
+            letter-spacing: normal;
+            text-align: center;
+            color: #171717;
+            padding-top: 50px;
+        }
+        hr{
+            border: 3px solid rgb(125,181,50);
+            width: 47px;
+            background-color: rgb(125,181,50);
+        }
+        .container{
+            margin-top: 50px;
+            .row{
+                justify-content: space-around;
+                .col-md-5{
+                    .value_col{
+                        .value_img{
+                            height: 90px;
+                            width: 90px;
+                            img{
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
+                        h6{
+                            padding-top: 25px;
+                            object-fit: contain;
+                            font-family: Roboto;
+                            font-size: 22px;
+                            font-weight: 500;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.23;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #000000;
+                        }
+                        p{
+                            padding-top: 25px;
+                            object-fit: contain;
+                            font-family: Roboto;
+                            font-size: 15px;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.8;
+                            letter-spacing: normal;
+                            text-align: justify;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

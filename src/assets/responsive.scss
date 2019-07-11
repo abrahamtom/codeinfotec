@@ -1,0 +1,337 @@
+/*
+	Site Name: 
+	URI: http:
+	Description: This is the responsive css for 
+	Version: 2.0
+	Author: Amal-Techware Solution
+	Author URI:
+	Tags:
+
+	---------------------------
+	CUSTOM STYLES
+	---------------------------
+
+	TABLE OF CONTENTS
+	---------------------------
+	01.0 Smartphones (portrait and landscape)
+	02.0 Smartphones (landscape)
+	03.0 Smartphones (portrait)
+	04.0 iPads (portrait and landscape)
+	05.0 iPads (landscape)
+	06.0 iPads (portrait)
+	07.0 Desktops and laptops
+	08.0 Large screens
+	09.0 iPhone 4
+	10.0 iPhone 5
+	11.0 iPhone 6
+	12.0 iPhone 6+
+	13.0 Samsung Galaxy S3
+	14.0 Samsung Galaxy S4
+	15.0 Samsung Galaxy S5
+
+
+*/
+
+
+/* 01. Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+//navbar scss
+nav{
+	.logo{
+		max-width: 250px !important;
+	}
+	.navbar-collapse{
+		ul{
+			li{
+				a{
+					text-align: left !important;
+				}
+			}
+			.icon_box{
+				margin-bottom: 10px !important;
+			}
+		}
+	}
+}
+// landing page scss
+.backgnd_grey{
+	.map_overlay{
+		.map_contents{
+			padding-top: 100px !important;
+			padding-bottom: 50px !important;
+			.row{
+				.col-md-5{
+					.left_side{
+						font-size: 28px !important;
+						.lorem{
+							font-size: 50px !important;
+						}
+						.ipsum{
+							font-size: 50px !important;
+						}
+					}
+				}
+				.col-md-7{
+					.right_side{
+						max-width: 400px !important;
+					}
+				}
+			}
+		}
+	}
+}
+.our_products{
+	margin-bottom: 50px !important;
+	.prod_overlay{
+		padding-top: 40px !important;
+	}
+	.pill_margin{
+        margin-top: 40px !important;
+	}
+	.container{
+		.nav-pills{
+			.nav-item{
+				.nav-link{
+					padding: 5px 25px 5px 25px !important;
+				}
+			}
+		}
+		.tab-content{
+			.tab-pane{
+				.row{ 
+					.col{
+						display: contents !important;
+						.prod_img{
+							height: 300px !important;
+							padding-top: 10px !important;
+						}
+						.prod_hover{
+							.prod_hover_overlay{
+								margin: 20px 20px 20px 20px !important;
+								img{
+									height: 50px !important;
+								}
+								h6{
+									margin-top: 0px !important;
+								}
+								p{
+									margin-top: 0px !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+h2{
+	font-size: 35px !important;
+}
+.why_codein_overlay{
+	.code_overlay{
+		padding-top: 40px !important;
+	}
+	.icon_container{
+		.row{
+			.col{
+				.image_icon{
+					width: 110px !important;
+					height: 100px !important;
+				}
+			}
+		}
+	}
+}
+.rating_review{
+	.rating_overlay{
+		padding-top: 40px !important;
+	}
+	.rating_review_box{
+		padding-top: 20px !important;
+		.rating_review_box_one{
+			.row{
+				.rating_head{
+					.rating_star{
+						margin: 0px 10px 0px 10px !important;
+					}
+					.kochi_taxi{
+						padding: 0px 10px 0px 0px !important;
+					}
+				}
+			}
+			.rating_body{
+				.rating_content{
+					margin: 35px 15px 35px 15px !important;
+				}
+			}
+		}
+	}
+}
+//scss for aboutus
+.about{
+	padding-top: 50px !important;
+	.map_overlay{
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+		padding-bottom: 40px !important;
+		h5{
+			line-height: 1.5 !important;
+		}
+		p{
+			text-align: justify !important;
+		}
+	}
+}
+.anim_background{
+	.anim_background_overlay{
+		.container{
+			.row{
+				.col-md-3{
+					padding-top: 30px !important;
+				}
+			}
+		}
+	}
+}
+}
+
+
+/* 02.0 Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {}
+
+
+/* 03.0 Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {}
+
+
+/* 04.0 iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	//scss for nav
+	nav{
+		.logo{
+			max-width: 250px !important;
+		}
+		.navbar-collapse{
+			margin-left: 0px !important;
+		}
+	}
+	//scss for landing
+	.backgnd_grey{
+		.map_overlay{
+			.map_contents{
+				padding-top: 180px !important;
+				padding-bottom: 150px !important;
+			}
+		}
+	}
+	.our_products{
+		.container{
+			.tab-content{
+				.tab-pane{
+					.row{
+						.col{
+							padding: 8px !important;
+							.prod_img{
+								width: 680px !important;
+								height: 100% !important;
+							}
+							.prod_hover{
+								.prod_hover_overlay{
+									img{
+										height: 60px !important;
+									}
+									h6{
+										font-size: 32px !important;
+									}
+									p{
+										font-size: 18px !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+
+/* 05.0 iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {}
+
+
+/* 06.0 iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
+
+
+/* 07.0 Desktops and laptops ----------- */
+
+	/* LOW RESOLUTION ----------- */
+
+    @media only screen and (min-width: 900px) and (max-device-width: 1249px) {
+        
+    }
+
+    @media only screen and (min-width: 1250px) and (max-device-width: 1359px) {
+   
+    }
+    @media only screen and (min-width: 1360px) and (max-device-width: 1399px) {
+        
+    }
+    @media only screen and (min-width: 1400px) and (max-device-width: 1600px) {
+       
+    }
+
+
+
+/* 08.0 Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {}
+
+
+/* 09.0 iPhone 4 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* 10.0 iPhone 5 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {}
+
+
+/* 11.0 iPhone 6 ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {}
+
+
+/* 12.0 iPhone 6+ ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {}
+
+
+/* 13.0 Samsung Galaxy S3 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {}
+
+
+/* 14.0 Samsung Galaxy S4 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {}
+
+
+/* 15.0 Samsung Galaxy S5 ----------- */
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {}
+
+@media (max-width: 480px) {}
+
+@media only screen and (min-width: 1000px) {}

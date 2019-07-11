@@ -1,0 +1,67 @@
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    .logo{
+        max-width: 380px;
+        max-height: 78px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .navbar-collapse{
+        margin-left: 160px;
+        ul{
+            li{
+                width: 101px;
+                height: 41px;
+                a{
+                   width: 100%;
+                   height: 100%;
+                   text-align: center;
+                }
+                &:hover{
+                    border: 2px solid rgb(125,181,50);
+                }
+            }
+            .icon_box{
+                height: 43px;
+                width: 43px;
+                border: 2px solid rgb(125,181,50);
+                text-align: center;
+                margin-left: 5px;
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                .icon_facebook{
+                    width: 10px;
+                    margin: 10px;
+                    height: 21px;
+                }
+                .icon_twitter{
+                    width: 25px;
+                    height: 21px;
+                    margin: 8px;
+                }
+                .icon_google{
+                    width: 20px;
+                    height: 21px;
+                    margin: 9px;
+                }
+            }
+        }
+    }
+    
+}
+.Text-Style {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #404041;
+  }
